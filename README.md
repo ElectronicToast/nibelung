@@ -1,6 +1,6 @@
 # nibelung
 
-Open source Teensy 3.x WS8211 LED controller breakout
+Open source Teensy 3.x WS2811 LED controller breakout
 
 ## License
 
