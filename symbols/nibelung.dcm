@@ -4,4 +4,8 @@ $CMP Teensy3.2
 F https://www.pjrc.com/store/teensy32.html
 $ENDCMP
 #
+$CMP Teensy4.0
+F https://www.pjrc.com/store/teensy32.html
+$ENDCMP
+#
 #End Doc Library
