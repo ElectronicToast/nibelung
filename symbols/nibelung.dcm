@@ -5,7 +5,15 @@ F https://www.pjrc.com/store/teensy32.html
 $ENDCMP
 #
 $CMP Teensy4.0
-F https://www.pjrc.com/store/teensy32.html
+F https://www.pjrc.com/store/teensy40.html
+$ENDCMP
+#
+$CMP Teensy4.0_WithBottom
+F https://www.pjrc.com/store/teensy40.html
+$ENDCMP
+#
+$CMP Teensy4.0_WithBottomAndEdge
+F https://www.pjrc.com/store/teensy40.html
 $ENDCMP
 #
 #End Doc Library
