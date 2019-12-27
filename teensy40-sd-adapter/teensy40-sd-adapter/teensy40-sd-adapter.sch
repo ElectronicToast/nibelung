@@ -33,7 +33,7 @@ CMD
 Text Label 5100 4300 0    50   ~ 0
 VDD
 Text Label 5100 4400 0    50   ~ 0
-GND
+CLK
 Text Label 5100 4500 0    50   ~ 0
 VSS
 Text Label 5100 4600 0    50   ~ 0
