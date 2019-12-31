@@ -67,7 +67,7 @@
     (pad_to_mask_clearance 0.0508)
     (solder_mask_min_width 0.254)
     (aux_axis_origin 0 0)
-    (grid_origin 101.6035 50.8)
+    (grid_origin 101.6 50.8)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
@@ -1560,7 +1560,7 @@
   (gr_line (start 100.19888 85.030056) (end 118.10588 85.030056) (layer B.SilkS) (width 0.12) (tstamp 5E0B523C))
   (gr_line (start 100.2665 97.79) (end 118.1735 97.79) (layer B.SilkS) (width 0.12) (tstamp 5E0B5105))
   (dimension 101.6 (width 0.15) (layer Dwgs.User)
-    (gr_text "4.0000 in" (at 91.759127 100.203 270) (layer Dwgs.User) (tstamp 5E0B4B86)
+    (gr_text "4.0000 in" (at 91.759127 100.203 270) (layer Dwgs.User) (tstamp 5E0B75C2)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (feature1 (pts (xy 99.6985 151.003) (xy 92.472706 151.003)))
@@ -1601,7 +1601,7 @@
     (effects (font (size 0.635 0.635) (thickness 0.127)))
   )
   (dimension 15.494 (width 0.15) (layer Dwgs.User) (tstamp 5E0AF8CC)
-    (gr_text "0.6100 in" (at 95.9855 113.284 90) (layer Dwgs.User) (tstamp 5E0B4B8F)
+    (gr_text "0.6100 in" (at 95.9855 113.284 90) (layer Dwgs.User) (tstamp 5E0B75CB)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (feature1 (pts (xy 99.4445 105.537) (xy 96.699079 105.537)))
@@ -2045,7 +2045,7 @@
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 1.27))
     (polygon
       (pts
-        (xy 111.76 95.25) (xy 118.11 101.6) (xy 118.11 105.41) (xy 100.33 105.41) (xy 100.33 102.87)
+        (xy 111.76 95.25) (xy 118.11 101.6) (xy 118.11 105.0925) (xy 100.33 105.0925) (xy 100.33 102.87)
         (xy 102.87 102.87) (xy 106.68 99.06) (xy 106.68 82.55) (xy 111.76 82.55)
       )
     )
@@ -2085,7 +2085,7 @@
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 1.27))
     (polygon
       (pts
-        (xy 118.1135 120.9005) (xy 100.3335 120.9005) (xy 100.3335 105.6605) (xy 118.1135 105.6605)
+        (xy 117.7925 120.5865) (xy 100.6475 120.5865) (xy 100.6475 105.9815) (xy 117.7925 105.9815)
       )
     )
     (filled_polygon
