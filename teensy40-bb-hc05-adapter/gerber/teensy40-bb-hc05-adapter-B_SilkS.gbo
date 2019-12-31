@@ -1,12 +1,12 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(5.1.5)-3*
-G04 #@! TF.CreationDate,2019-12-30T21:20:25-08:00*
+G04 #@! TF.CreationDate,2019-12-30T21:30:00-08:00*
 G04 #@! TF.ProjectId,teensy40-bb-hc05-adapter,7465656e-7379-4343-902d-62622d686330,A*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Legend,Bot*
 G04 #@! TF.FilePolarity,Positive*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.1.5)-3) date 2019-12-30 21:20:25*
+G04 Created by KiCad (PCBNEW (5.1.5)-3) date 2019-12-30 21:30:00*
 %MOMM*%
 %LPD*%
 G04 APERTURE LIST*
