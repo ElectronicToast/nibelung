@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name nibelung)(type KiCad)(uri ${KIPRJMOD}/../../footprints/nibelung.pretty)(options "")(descr ""))
+)

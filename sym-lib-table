@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name nibelung)(type Legacy)(uri ${KIPRJMOD}/symbols/nibelung.lib)(options "")(descr ""))
+)
