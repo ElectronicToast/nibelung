@@ -1,4 +1,4 @@
-# nibelung
+![logo](img/nibelung-logo.png)
 
 ![license](https://img.shields.io/github/license/electronictoast/nibelung) ![madewith](https://img.shields.io/badge/made%20with-KiCad-blue)
 
