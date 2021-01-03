@@ -27,4 +27,9 @@ $CMP Teensy4.0_WithBottomAndEdge
 F https://www.pjrc.com/store/teensy40.html
 $ENDCMP
 #
+$CMP VIN
+D Power symbol creates a global label with name "VIN"
+K power-flag
+$ENDCMP
+#
 #End Doc Library
