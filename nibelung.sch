@@ -6824,10 +6824,10 @@ F 3 "" H 2300 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L nibelung:SJ-3524 J3
+L nibelung:SJ-3524 J2
 U 1 1 5FF1AAF7
 P 1600 2500
-F 0 "J3" H 1582 2825 50  0000 C CNN
+F 0 "J2" H 1582 2825 50  0000 C CNN
 F 1 "AudioJack3-TSW" H 1582 2734 50  0000 C CNN
 F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ-3524-SMT_Horizontal" H 1600 2500 50  0001 C CNN
 F 3 "https://www.cuidevices.com/product/resource/sj-352x-smt.pdf" H 1600 2500 50  0001 C CNN
@@ -6857,10 +6857,10 @@ F 3 "" H 2200 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x08 J4
+L Connector_Generic:Conn_01x08 J3
 U 1 1 5FF78D26
 P 1400 3900
-F 0 "J4" H 1350 3250 50  0000 L CNN
+F 0 "J3" H 1350 3250 50  0000 L CNN
 F 1 "ScrewTerm_01x08_2.54mm" H 900 3350 50  0000 L CNN
 F 2 "nibelung:TerminalBlock_Molex_397730008_1x08_P2.54mm_Horizontal" H 1400 3900 50  0001 C CNN
 F 3 "https://www.molex.com/pdm_docs/sd/397730008_sd.pdf" H 1400 3900 50  0001 C CNN
@@ -6868,10 +6868,10 @@ F 3 "https://www.molex.com/pdm_docs/sd/397730008_sd.pdf" H 1400 3900 50  0001 C 
 	1    0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x08 J5
+L Connector_Generic:Conn_01x08 J4
 U 1 1 5FF7BFE0
 P 2500 3900
-F 0 "J5" H 2450 3250 50  0000 L CNN
+F 0 "J4" H 2450 3250 50  0000 L CNN
 F 1 "ScrewTerm_01x08_2.54mm" H 2000 3350 50  0000 L CNN
 F 2 "nibelung:TerminalBlock_Molex_397730008_1x08_P2.54mm_Horizontal" H 2500 3900 50  0001 C CNN
 F 3 "https://www.molex.com/pdm_docs/sd/397730008_sd.pdf" H 2500 3900 50  0001 C CNN
@@ -6931,10 +6931,10 @@ Wire Wire Line
 Text Notes 1300 4400 0    50   ~ 0
 MOLEX 393570008
 $Comp
-L Connector_Generic:Conn_01x03 J7
+L Connector_Generic:Conn_01x03 J6
 U 1 1 60032ED9
 P 2400 5000
-F 0 "J7" H 2480 5042 50  0000 L CNN
+F 0 "J6" H 2480 5042 50  0000 L CNN
 F 1 "JST_SH_01x03" H 2480 4951 50  0000 L CNN
 F 2 "Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal" H 2400 5000 50  0001 C CNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/eSH.pdf" H 2400 5000 50  0001 C CNN
@@ -11353,10 +11353,10 @@ F 3 "" H 800 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J6
+L Connector_Generic:Conn_01x03 J5
 U 1 1 6001B8C1
 P 1200 5000
-F 0 "J6" H 1280 5042 50  0000 L CNN
+F 0 "J5" H 1280 5042 50  0000 L CNN
 F 1 "JST_SH_01x03" H 1280 4951 50  0000 L CNN
 F 2 "Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal" H 1200 5000 50  0001 C CNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/eSH.pdf" H 1200 5000 50  0001 C CNN
@@ -11365,80 +11365,43 @@ F 3 "http://www.jst-mfg.com/product/pdf/eng/eSH.pdf" H 1200 5000 50  0001 C CNN
 $EndComp
 Text Notes 1700 1100 0    50   ~ 10
 Power
-$Comp
-L Connector_Generic:Conn_01x02 J1
-U 1 1 5FF764EA
-P 1100 1400
-F 0 "J1" H 1180 1392 50  0000 L CNN
-F 1 "JST_PH_01x02" H 1180 1301 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" H 1100 1400 50  0001 C CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf?5ff178aa27b3f" H 1100 1400 50  0001 C CNN
-	1    1100 1400
-	1    0    0    -1  
-$EndComp
-Text Notes 900  1700 0    50   ~ 0
-JST S2B-PH-SM4-TB
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5FF77652
-P 2200 1400
-F 0 "J2" H 2280 1392 50  0000 L CNN
-F 1 "JST_PH_01x02" H 2280 1301 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" H 2200 1400 50  0001 C CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf?5ff178aa27b3f" H 2200 1400 50  0001 C CNN
-	1    2200 1400
-	1    0    0    -1  
-$EndComp
+Text Notes 1700 1700 0    50   ~ 0
+JST S3B-PH-SM4-TB
 $Comp
 L power:GND #PWR03
 U 1 1 5FF77D59
-P 800 1500
-F 0 "#PWR03" H 800 1250 50  0001 C CNN
-F 1 "GND" H 805 1327 50  0000 C CNN
-F 2 "" H 800 1500 50  0001 C CNN
-F 3 "" H 800 1500 50  0001 C CNN
-	1    800  1500
+P 1500 1600
+F 0 "#PWR03" H 1500 1350 50  0001 C CNN
+F 1 "GND" H 1505 1427 50  0000 C CNN
+F 2 "" H 1500 1600 50  0001 C CNN
+F 3 "" H 1500 1600 50  0001 C CNN
+	1    1500 1600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	800  1500 900  1500
+	1500 1400 1600 1400
 Wire Wire Line
-	800  1400 900  1400
-$Comp
-L power:GND #PWR034
-U 1 1 5FFA4524
-P 1900 1500
-F 0 "#PWR034" H 1900 1250 50  0001 C CNN
-F 1 "GND" H 1905 1327 50  0000 C CNN
-F 2 "" H 1900 1500 50  0001 C CNN
-F 3 "" H 1900 1500 50  0001 C CNN
-	1    1900 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1900 1500 2000 1500
+	1500 1300 1600 1300
 $Comp
 L nibelung:VIN #PWR02
 U 1 1 5FFD9FC8
-P 800 1400
-F 0 "#PWR02" H 800 1250 50  0001 C CNN
-F 1 "VIN" H 815 1573 50  0000 C CNN
-F 2 "" H 800 1400 50  0001 C CNN
-F 3 "" H 800 1400 50  0001 C CNN
-	1    800  1400
+P 1500 1300
+F 0 "#PWR02" H 1500 1150 50  0001 C CNN
+F 1 "VIN" H 1515 1473 50  0000 C CNN
+F 2 "" H 1500 1300 50  0001 C CNN
+F 3 "" H 1500 1300 50  0001 C CNN
+	1    1500 1300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1900 1400 2000 1400
 $Comp
 L power:+5V #PWR033
 U 1 1 5FFE3707
-P 1900 1400
-F 0 "#PWR033" H 1900 1250 50  0001 C CNN
-F 1 "+5V" H 1915 1573 50  0000 C CNN
-F 2 "" H 1900 1400 50  0001 C CNN
-F 3 "" H 1900 1400 50  0001 C CNN
-	1    1900 1400
+P 1300 1300
+F 0 "#PWR033" H 1300 1150 50  0001 C CNN
+F 1 "+5V" H 1315 1473 50  0000 C CNN
+F 2 "" H 1300 1300 50  0001 C CNN
+F 3 "" H 1300 1300 50  0001 C CNN
+	1    1300 1300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -11719,4 +11682,21 @@ Wire Wire Line
 	9300 2200 9100 2200
 Wire Wire Line
 	9100 2200 9100 2300
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 6008A0E0
+P 1800 1400
+F 0 "J1" H 1880 1442 50  0000 L CNN
+F 1 "JST_SH_01x03" H 1880 1351 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S3B-PH-SM4-TB_1x03-1MP_P2.00mm_Horizontal" H 1800 1400 50  0001 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf?5ff178aa27b3f" H 1800 1400 50  0001 C CNN
+	1    1800 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1600 1500 1400
+Wire Wire Line
+	1600 1500 1300 1500
+Wire Wire Line
+	1300 1500 1300 1300
 $EndSCHEMATC
