@@ -421,7 +421,7 @@ Text Notes 1600 2000 0    50   ~ 10
 Audio Input
 Text Notes 1600 3100 0    50   ~ 10
 LED Output
-Text Notes 8800 900  0    100  ~ 20
+Text Notes 8700 900  0    100  ~ 20
 MOUNTING HOLES
 $Comp
 L Device:R_Small_US R2
@@ -6859,23 +6859,23 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x08 J4
 U 1 1 5FF78D26
-P 1400 3800
-F 0 "J4" H 1350 4350 50  0000 L CNN
-F 1 "ScrewTerm_01x08_2.54mm" H 900 4250 50  0000 L CNN
-F 2 "nibelung:TerminalBlock_Molex_397730008_1x08_P2.54mm_Horizontal" H 1400 3800 50  0001 C CNN
-F 3 "https://www.molex.com/pdm_docs/sd/397730008_sd.pdf" H 1400 3800 50  0001 C CNN
-	1    1400 3800
+P 1400 3900
+F 0 "J4" H 1350 3250 50  0000 L CNN
+F 1 "ScrewTerm_01x08_2.54mm" H 900 3350 50  0000 L CNN
+F 2 "nibelung:TerminalBlock_Molex_397730008_1x08_P2.54mm_Horizontal" H 1400 3900 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/397730008_sd.pdf" H 1400 3900 50  0001 C CNN
+	1    1400 3900
 	1    0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x08 J5
 U 1 1 5FF7BFE0
-P 2500 3800
-F 0 "J5" H 2450 4350 50  0000 L CNN
-F 1 "ScrewTerm_01x08_2.54mm" H 2000 4250 50  0000 L CNN
-F 2 "nibelung:TerminalBlock_Molex_397730008_1x08_P2.54mm_Horizontal" H 2500 3800 50  0001 C CNN
-F 3 "https://www.molex.com/pdm_docs/sd/397730008_sd.pdf" H 2500 3800 50  0001 C CNN
-	1    2500 3800
+P 2500 3900
+F 0 "J5" H 2450 3250 50  0000 L CNN
+F 1 "ScrewTerm_01x08_2.54mm" H 2000 3350 50  0000 L CNN
+F 2 "nibelung:TerminalBlock_Molex_397730008_1x08_P2.54mm_Horizontal" H 2500 3900 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/397730008_sd.pdf" H 2500 3900 50  0001 C CNN
+	1    2500 3900
 	1    0    0    1   
 $EndComp
 Wire Wire Line
@@ -6965,7 +6965,7 @@ Wire Wire Line
 Text Notes 1400 4700 0    50   ~ 10
 RS-485 Connectors
 Text Notes 8800 5800 0    50   ~ 0
-SOIC-20
+TSSOP-20
 Text Notes 1300 2900 0    50   ~ 0
 CUI SJ-3524
 NoConn ~ 6500 1800
@@ -11535,10 +11535,10 @@ Wire Wire Line
 Text Label 6800 2200 2    50   ~ 0
 TXEN
 $Comp
-L power:GND #PWR?
+L power:GND #PWR037
 U 1 1 600ED2E2
 P 9400 1300
-F 0 "#PWR?" H 9400 1050 50  0001 C CNN
+F 0 "#PWR037" H 9400 1050 50  0001 C CNN
 F 1 "GND" H 9405 1127 50  0000 C CNN
 F 2 "" H 9400 1300 50  0001 C CNN
 F 3 "" H 9400 1300 50  0001 C CNN
@@ -11556,4 +11556,167 @@ Wire Wire Line
 Connection ~ 9600 1300
 Wire Wire Line
 	9600 1300 10000 1300
+Text Notes 8900 1900 0    100  ~ 20
+INDICATORS
+$Comp
+L Device:R_Small_US R8
+U 1 1 5FF31FC6
+P 8700 2600
+F 0 "R8" H 8800 2650 50  0000 L CNN
+F 1 "10k" H 8800 2550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 8700 2600 50  0001 C CNN
+F 3 "~" H 8700 2600 50  0001 C CNN
+	1    8700 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR029
+U 1 1 5FF3255E
+P 8700 2700
+F 0 "#PWR029" H 8700 2450 50  0001 C CNN
+F 1 "GND" H 8705 2527 50  0000 C CNN
+F 2 "" H 8700 2700 50  0001 C CNN
+F 3 "" H 8700 2700 50  0001 C CNN
+	1    8700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR027
+U 1 1 5FF3B28A
+P 8700 2300
+F 0 "#PWR027" H 8700 2150 50  0001 C CNN
+F 1 "+5V" H 8715 2473 50  0000 C CNN
+F 2 "" H 8700 2300 50  0001 C CNN
+F 3 "" H 8700 2300 50  0001 C CNN
+	1    8700 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D1
+U 1 1 5FF3C140
+P 8700 2400
+F 0 "D1" V 8746 2330 50  0000 R CNN
+F 1 "RED" V 8655 2330 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8700 2400 50  0001 C CNN
+F 3 "~" V 8700 2400 50  0001 C CNN
+	1    8700 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small_US R9
+U 1 1 5FF4CED7
+P 9100 2600
+F 0 "R9" H 9200 2650 50  0000 L CNN
+F 1 "680" H 9200 2550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9100 2600 50  0001 C CNN
+F 3 "~" H 9100 2600 50  0001 C CNN
+	1    9100 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR036
+U 1 1 5FF4D4B5
+P 9100 2700
+F 0 "#PWR036" H 9100 2450 50  0001 C CNN
+F 1 "GND" H 9105 2527 50  0000 C CNN
+F 2 "" H 9100 2700 50  0001 C CNN
+F 3 "" H 9100 2700 50  0001 C CNN
+	1    9100 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D2
+U 1 1 5FF4D4C9
+P 9100 2400
+F 0 "D2" V 9146 2330 50  0000 R CNN
+F 1 "AMBER" V 9055 2330 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 9100 2400 50  0001 C CNN
+F 3 "~" V 9100 2400 50  0001 C CNN
+	1    9100 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small_US R19
+U 1 1 5FF561B5
+P 9500 2600
+F 0 "R19" H 9600 2650 50  0000 L CNN
+F 1 "430" H 9600 2550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9500 2600 50  0001 C CNN
+F 3 "~" H 9500 2600 50  0001 C CNN
+	1    9500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR038
+U 1 1 5FF567D9
+P 9500 2700
+F 0 "#PWR038" H 9500 2450 50  0001 C CNN
+F 1 "GND" H 9505 2527 50  0000 C CNN
+F 2 "" H 9500 2700 50  0001 C CNN
+F 3 "" H 9500 2700 50  0001 C CNN
+	1    9500 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D3
+U 1 1 5FF567ED
+P 9500 2400
+F 0 "D3" V 9546 2330 50  0000 R CNN
+F 1 "GREEN" V 9455 2330 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 9500 2400 50  0001 C CNN
+F 3 "~" V 9500 2400 50  0001 C CNN
+	1    9500 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small_US R20
+U 1 1 5FF5F686
+P 9900 2600
+F 0 "R20" H 10000 2650 50  0000 L CNN
+F 1 "330" H 10000 2550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9900 2600 50  0001 C CNN
+F 3 "~" H 9900 2600 50  0001 C CNN
+	1    9900 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR039
+U 1 1 5FF5FCF0
+P 9900 2700
+F 0 "#PWR039" H 9900 2450 50  0001 C CNN
+F 1 "GND" H 9905 2527 50  0000 C CNN
+F 2 "" H 9900 2700 50  0001 C CNN
+F 3 "" H 9900 2700 50  0001 C CNN
+	1    9900 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D4
+U 1 1 5FF5FD04
+P 9900 2400
+F 0 "D4" V 9946 2330 50  0000 R CNN
+F 1 "BLUE" V 9855 2330 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 9900 2400 50  0001 C CNN
+F 3 "~" V 9900 2400 50  0001 C CNN
+	1    9900 2400
+	0    -1   -1   0   
+$EndComp
+Text Label 9300 2200 2    50   ~ 0
+IND1
+Text Label 9700 2200 2    50   ~ 0
+IND2
+Text Label 10100 2200 2    50   ~ 0
+IND3
+Wire Wire Line
+	10100 2200 9900 2200
+Wire Wire Line
+	9900 2200 9900 2300
+Wire Wire Line
+	9700 2200 9500 2200
+Wire Wire Line
+	9500 2200 9500 2300
+Wire Wire Line
+	9300 2200 9100 2200
+Wire Wire Line
+	9100 2200 9100 2300
 $EndSCHEMATC
