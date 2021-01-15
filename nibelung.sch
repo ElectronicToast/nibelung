@@ -5,7 +5,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Nibelung"
-Date "2021-01-01"
+Date "2021-01-15"
 Rev "A"
 Comp "Mudd Electrical Engineering"
 Comment1 "Blacker Hackers"
@@ -199,12 +199,12 @@ LED_OUT1
 $Comp
 L power:GND #PWR016
 U 1 1 5D2C4157
-P 4000 1300
-F 0 "#PWR016" H 4000 1050 50  0001 C CNN
-F 1 "GND" H 4005 1127 50  0000 C CNN
-F 2 "" H 4000 1300 50  0001 C CNN
-F 3 "" H 4000 1300 50  0001 C CNN
-	1    4000 1300
+P 3900 1300
+F 0 "#PWR016" H 3900 1050 50  0001 C CNN
+F 1 "GND" H 3905 1127 50  0000 C CNN
+F 2 "" H 3900 1300 50  0001 C CNN
+F 3 "" H 3900 1300 50  0001 C CNN
+	1    3900 1300
 	1    0    0    -1  
 $EndComp
 Text Label 3900 1700 0    50   ~ 0
@@ -224,8 +224,6 @@ F 3 "" H 6700 1400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6700 1400 6500 1400
-NoConn ~ 4300 1500
-NoConn ~ 4300 1600
 Text Label 700  3700 0    50   ~ 0
 LED_OUT2
 Text Label 700  3900 0    50   ~ 0
@@ -267,28 +265,6 @@ Wire Wire Line
 	6800 1300 6800 1500
 Wire Wire Line
 	6500 1500 6800 1500
-$Comp
-L Jumper:SolderJumper_2_Bridged JP2
-U 1 1 5D345A98
-P 7000 3000
-F 0 "JP2" H 6800 3050 50  0000 C CNN
-F 1 "SJ2" H 7000 2800 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 7000 3000 50  0001 C CNN
-F 3 "~" H 7000 3000 50  0001 C CNN
-	1    7000 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Bridged JP1
-U 1 1 5D3778EC
-P 7000 2900
-F 0 "JP1" H 6800 2950 50  0000 C CNN
-F 1 "SJ2" H 7000 2700 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 7000 2900 50  0001 C CNN
-F 3 "~" H 7000 2900 50  0001 C CNN
-	1    7000 2900
-	1    0    0    -1  
-$EndComp
 Text Label 2100 2600 2    50   ~ 0
 AUD_L
 Text Label 2100 2500 2    50   ~ 0
@@ -464,7 +440,7 @@ AUDIO
 Text Notes 8200 3400 0    100  ~ 20
 LED OUTPUT
 Wire Wire Line
-	4000 1300 4200 1300
+	3900 1300 4200 1300
 Wire Wire Line
 	4200 1300 4200 1400
 Wire Wire Line
@@ -530,22 +506,6 @@ Text Label 3900 2300 0    50   ~ 0
 LED7
 Text Label 3900 2400 0    50   ~ 0
 LED8
-Wire Wire Line
-	4000 2500 4300 2500
-Wire Wire Line
-	4000 2600 4300 2600
-Wire Wire Line
-	4000 2700 4300 2700
-Text Label 4000 2500 0    50   ~ 0
-CS
-Text Label 4000 2600 0    50   ~ 0
-MOSI
-Text Label 4000 2700 0    50   ~ 0
-MISO
-Wire Wire Line
-	6800 2700 6500 2700
-Text Label 6800 2700 2    50   ~ 0
-SCK
 $Bitmap
 Pos 8920 7080
 Scale 0.180000
@@ -6900,9 +6860,9 @@ $EndComp
 Wire Wire Line
 	2000 4900 2200 4900
 Text Label 2100 5000 0    50   ~ 0
-A
+D+
 Text Label 2100 5100 0    50   ~ 0
-B
+D-
 Wire Wire Line
 	2100 5100 2200 5100
 Wire Wire Line
@@ -6931,7 +6891,7 @@ L Device:R_Small_US R1
 U 1 1 600ACEAF
 P 2300 6700
 F 0 "R1" H 2400 6750 50  0000 L CNN
-F 1 "100" H 2400 6650 50  0000 L CNN
+F 1 "120" H 2400 6650 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2300 6700 50  0001 C CNN
 F 3 "~" H 2300 6700 50  0001 C CNN
 	1    2300 6700
@@ -6956,15 +6916,15 @@ Wire Wire Line
 Wire Wire Line
 	2300 6500 2300 6600
 Wire Wire Line
-	2300 6500 2400 6500
+	2300 6500 2500 6500
 Connection ~ 2300 6500
 Wire Wire Line
-	2400 6900 2300 6900
+	2500 6900 2300 6900
 Connection ~ 2300 6900
-Text Label 2400 6500 2    50   ~ 0
-A
-Text Label 2400 6900 2    50   ~ 0
-B
+Text Label 2500 6500 2    50   ~ 0
+D+
+Text Label 2500 6900 2    50   ~ 0
+D-
 Text Notes 1900 7500 0    50   ~ 0
 SOIC-8
 Wire Wire Line
@@ -11259,9 +11219,9 @@ Wire Wire Line
 Wire Wire Line
 	900  5100 1000 5100
 Text Label 900  5100 0    50   ~ 0
-B
+D-
 Text Label 900  5000 0    50   ~ 0
-A
+D+
 Wire Wire Line
 	800  4900 1000 4900
 $Comp
@@ -11338,17 +11298,6 @@ F 3 "~" H 2600 2500 50  0001 C CNN
 	1    2600 2500
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3V3 #PWR035
-U 1 1 6000FED7
-P 2600 2400
-F 0 "#PWR035" H 2600 2250 50  0001 C CNN
-F 1 "+3V3" H 2615 2573 50  0000 C CNN
-F 2 "" H 2600 2400 50  0001 C CNN
-F 3 "" H 2600 2400 50  0001 C CNN
-	1    2600 2400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2600 2700 2600 2600
 Wire Wire Line
@@ -11364,7 +11313,6 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/285012f
 	1    1700 6900
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6500 2100
 Text Label 6800 2300 2    50   ~ 0
 TX
 Wire Wire Line
@@ -11883,10 +11831,6 @@ Text Label 10000 4300 2    50   ~ 0
 LED_OUT8
 Text Notes 4100 6600 0    100  ~ 20
 BUTTONS
-NoConn ~ 4000 2500
-NoConn ~ 4000 2600
-NoConn ~ 4000 2700
-NoConn ~ 6800 2700
 $Comp
 L Device:R_Small_US R21
 U 1 1 602EB80F
@@ -12100,4 +12044,79 @@ F 3 "https://www.ckswitches.com/media/1477/pts840.pdf" H 4000 7400 50  0001 C CN
 	1    4000 7200
 	-1   0    0    -1  
 $EndComp
+$Comp
+L nibelung:+3V3A #PWR0114
+U 1 1 6002E658
+P 2600 2400
+F 0 "#PWR0114" H 2600 2250 50  0001 C CNN
+F 1 "+3V3A" H 2615 2573 50  0000 C CNN
+F 2 "" H 2600 2400 50  0001 C CNN
+F 3 "" H 2600 2400 50  0001 C CNN
+	1    2600 2400
+	1    0    0    -1  
+$EndComp
+Text Label 4100 1500 0    50   ~ 0
+INDC
+Wire Wire Line
+	4100 1500 4300 1500
+Text Label 4100 1600 0    50   ~ 0
+INDB
+Wire Wire Line
+	4100 1600 4300 1600
+Text Label 6700 2100 2    50   ~ 0
+INDA
+Wire Wire Line
+	6700 2100 6500 2100
+NoConn ~ 4300 2500
+NoConn ~ 4300 2600
+NoConn ~ 4300 2700
+NoConn ~ 6500 2700
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 6019B94F
+P 3800 3100
+F 0 "#FLG0101" H 3800 3175 50  0001 C CNN
+F 1 "PWR_FLAG" H 3800 3273 50  0000 C CNN
+F 2 "" H 3800 3100 50  0001 C CNN
+F 3 "~" H 3800 3100 50  0001 C CNN
+	1    3800 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L nibelung:VIN #PWR0115
+U 1 1 6019C921
+P 3400 3100
+F 0 "#PWR0115" H 3400 2950 50  0001 C CNN
+F 1 "VIN" H 3415 3273 50  0000 C CNN
+F 2 "" H 3400 3100 50  0001 C CNN
+F 3 "" H 3400 3100 50  0001 C CNN
+	1    3400 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3100 3400 3100
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 601A7920
+P 3800 3200
+F 0 "#FLG0102" H 3800 3275 50  0001 C CNN
+F 1 "PWR_FLAG" H 3800 3373 50  0000 C CNN
+F 2 "" H 3800 3200 50  0001 C CNN
+F 3 "~" H 3800 3200 50  0001 C CNN
+	1    3800 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 601A7BF1
+P 3400 3200
+F 0 "#PWR0116" H 3400 2950 50  0001 C CNN
+F 1 "GND" H 3405 3027 50  0000 C CNN
+F 2 "" H 3400 3200 50  0001 C CNN
+F 3 "" H 3400 3200 50  0001 C CNN
+	1    3400 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3200 3800 3200
 $EndSCHEMATC

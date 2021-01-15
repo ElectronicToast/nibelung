@@ -1,4 +1,4 @@
-update=1/8/2021 6:17:46 PM
+update=1/9/2021 6:03:40 PM
 version=1
 last_client=kicad
 [general]
@@ -266,6 +266,17 @@ dPairWidth=0.1524
 dPairGap=0.1524
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
+Name=RS-485
+Clearance=0.1524
+TrackWidth=0.2032
+ViaDiameter=0.6096
+ViaDrill=0.3048
+uViaDiameter=0.6096
+uViaDrill=0.3048
+dPairWidth=0.2032
+dPairGap=0.1524
+dPairViaGap=0.25
+[pcbnew/Netclasses/3]
 Name=Thin
 Clearance=0.2032
 TrackWidth=0.2032
