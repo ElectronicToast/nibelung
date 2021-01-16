@@ -6678,8 +6678,8 @@ L Mechanical:MountingHole_Pad H1
 U 1 1 5FF13188
 P 8800 1200
 F 0 "H1" H 8900 1246 50  0000 L CNN
-F 1 "M2.5" H 8900 1155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via" H 8800 1200 50  0001 C CNN
+F 1 "M2" H 8900 1155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 8800 1200 50  0001 C CNN
 F 3 "~" H 8800 1200 50  0001 C CNN
 	1    8800 1200
 	1    0    0    -1  
@@ -6689,8 +6689,8 @@ L Mechanical:MountingHole_Pad H2
 U 1 1 5FF13498
 P 9200 1200
 F 0 "H2" H 9300 1246 50  0000 L CNN
-F 1 "M2.5" H 9300 1155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via" H 9200 1200 50  0001 C CNN
+F 1 "M2" H 9300 1155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 9200 1200 50  0001 C CNN
 F 3 "~" H 9200 1200 50  0001 C CNN
 	1    9200 1200
 	1    0    0    -1  
@@ -6700,8 +6700,8 @@ L Mechanical:MountingHole_Pad H3
 U 1 1 5FF13873
 P 9600 1200
 F 0 "H3" H 9700 1246 50  0000 L CNN
-F 1 "M2.5" H 9700 1155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via" H 9600 1200 50  0001 C CNN
+F 1 "M2" H 9700 1155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 9600 1200 50  0001 C CNN
 F 3 "~" H 9600 1200 50  0001 C CNN
 	1    9600 1200
 	1    0    0    -1  
@@ -6711,8 +6711,8 @@ L Mechanical:MountingHole_Pad H4
 U 1 1 5FF13ABB
 P 10000 1200
 F 0 "H4" H 10100 1246 50  0000 L CNN
-F 1 "M2.5" H 10100 1155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via" H 10000 1200 50  0001 C CNN
+F 1 "M2" H 10100 1155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 10000 1200 50  0001 C CNN
 F 3 "~" H 10000 1200 50  0001 C CNN
 	1    10000 1200
 	1    0    0    -1  
@@ -6767,7 +6767,7 @@ U 1 1 5FF78D26
 P 1400 3900
 F 0 "J3" H 1350 3250 50  0000 L CNN
 F 1 "ScrewTerm_01x08_2.54mm" H 900 3350 50  0000 L CNN
-F 2 "nibelung:TerminalBlock_Molex_397730008_1x08_P2.54mm_Horizontal" H 1400 3900 50  0001 C CNN
+F 2 "nibelung:TerminalBlock_Molex_393570008_1x08_P3.50mm_Horizontal" H 1400 3900 50  0001 C CNN
 F 3 "https://www.molex.com/pdm_docs/sd/397730008_sd.pdf" H 1400 3900 50  0001 C CNN
 	1    1400 3900
 	1    0    0    1   
@@ -6778,7 +6778,7 @@ U 1 1 5FF7BFE0
 P 2500 3900
 F 0 "J4" H 2450 3250 50  0000 L CNN
 F 1 "ScrewTerm_01x08_2.54mm" H 2000 3350 50  0000 L CNN
-F 2 "nibelung:TerminalBlock_Molex_397730008_1x08_P2.54mm_Horizontal" H 2500 3900 50  0001 C CNN
+F 2 "nibelung:TerminalBlock_Molex_393570008_1x08_P3.50mm_Horizontal" H 2500 3900 50  0001 C CNN
 F 3 "https://www.molex.com/pdm_docs/sd/397730008_sd.pdf" H 2500 3900 50  0001 C CNN
 	1    2500 3900
 	1    0    0    1   
