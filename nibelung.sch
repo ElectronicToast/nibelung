@@ -5,7 +5,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Nibelung"
-Date "2021-01-15"
+Date "2021-01-18"
 Rev "A"
 Comp "Mudd Electrical Engineering"
 Comment1 "Blacker Hackers"
@@ -38,12 +38,12 @@ $EndComp
 $Comp
 L power:GND #PWR028
 U 1 1 5CA1A622
-P 8000 5600
-F 0 "#PWR028" H 8000 5350 50  0001 C CNN
-F 1 "GND" H 8005 5427 50  0000 C CNN
-F 2 "" H 8000 5600 50  0001 C CNN
-F 3 "" H 8000 5600 50  0001 C CNN
-	1    8000 5600
+P 9200 5600
+F 0 "#PWR028" H 9200 5350 50  0001 C CNN
+F 1 "GND" H 9205 5427 50  0000 C CNN
+F 2 "" H 9200 5600 50  0001 C CNN
+F 3 "" H 9200 5600 50  0001 C CNN
+	1    9200 5600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -238,21 +238,10 @@ Text Label 1800 3900 0    50   ~ 0
 LED_OUT7
 Text Label 1800 4100 0    50   ~ 0
 LED_OUT8
-$Comp
-L 74xx:74HC245 U1
-U 1 1 5D324E2B
-P 8600 4800
-F 0 "U1" H 9000 4100 50  0000 C CNN
-F 1 "74HCT245" H 9000 4000 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 8600 4800 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74ahct245.pdf?ts=1608888725015" H 8600 4800 50  0001 C CNN
-	1    8600 4800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	8000 5600 8000 5300
+	9200 5600 9200 5300
 Wire Wire Line
-	8100 5300 8000 5300
+	9100 5300 9200 5300
 Wire Wire Line
 	2300 2400 1800 2400
 Text Label 7200 2600 2    50   ~ 0
@@ -328,12 +317,6 @@ F 3 "" H 8000 1400 50  0001 C CNN
 	1    8000 1400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8100 5200 8000 5200
-Wire Wire Line
-	8000 5200 8000 3900
-Wire Wire Line
-	8000 3900 8600 3900
 Text Notes 1300 900  0    100  ~ 20
 CONNECTORS
 Text Notes 4900 900  0    100  ~ 20
@@ -6856,7 +6839,7 @@ Wire Wire Line
 	2100 5000 2200 5000
 Text Notes 1400 4700 0    50   ~ 10
 RS-485 Connectors
-Text Notes 8800 5800 0    50   ~ 0
+Text Notes 8000 5800 0    50   ~ 0
 TSSOP-20
 Text Notes 1300 2900 0    50   ~ 0
 CUI SJ-3524
@@ -6924,7 +6907,7 @@ Connection ~ 1300 6900
 Text Label 800  6900 0    50   ~ 0
 DASH_TXEN
 Text Label 800  7100 0    50   ~ 0
-DASHTX
+DASH_TX
 Text Label 800  6700 0    50   ~ 0
 DASH_RX
 Wire Wire Line
@@ -11502,36 +11485,36 @@ Text Notes 8500 6500 0    50   ~ 0
 ALL PASSIVES 0805 UNLESS INDICATED\nALL LEDS 0805 UNLESS INDICATED
 Text Notes 6200 4600 0    50   ~ 0
 SOT-23-5
-Text Label 7600 5000 0    50   ~ 0
+Text Label 7800 4300 0    50   ~ 0
 LED1
 Wire Wire Line
-	7600 5000 8100 5000
-Text Label 7600 4900 0    50   ~ 0
+	7800 4300 8100 4300
+Text Label 7800 4400 0    50   ~ 0
 LED2
 Wire Wire Line
-	7600 4900 8100 4900
-Text Label 7600 4800 0    50   ~ 0
+	7800 4400 8100 4400
+Text Label 7800 4500 0    50   ~ 0
 LED3
 Wire Wire Line
-	7600 4800 8100 4800
-Text Label 7600 4700 0    50   ~ 0
+	7800 4500 8100 4500
+Text Label 7800 4600 0    50   ~ 0
 LED4
-Text Label 7600 4600 0    50   ~ 0
+Text Label 7800 4700 0    50   ~ 0
 LED5
-Text Label 7600 4500 0    50   ~ 0
+Text Label 7800 4800 0    50   ~ 0
 LED6
 Wire Wire Line
-	7600 4600 8100 4600
+	7800 4700 8100 4700
 Wire Wire Line
-	7600 4500 8100 4500
-Text Label 7600 4400 0    50   ~ 0
+	7800 4800 8100 4800
+Text Label 7800 4900 0    50   ~ 0
 LED7
 Wire Wire Line
-	7600 4400 8100 4400
-Text Label 7600 4300 0    50   ~ 0
+	7800 4900 8100 4900
+Text Label 7800 5000 0    50   ~ 0
 LED8
 Wire Wire Line
-	7600 4300 8100 4300
+	7800 5000 8100 5000
 Connection ~ 5700 3800
 $Comp
 L power:+3V3 #PWR0102
@@ -11720,38 +11703,38 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC5219-500mA-Peak-Output-L
 $EndComp
 NoConn ~ 4600 3900
 Wire Wire Line
-	7600 4700 8100 4700
+	7800 4600 8100 4600
 Wire Wire Line
-	9400 4300 10000 4300
-Wire Wire Line
-	9400 4400 10000 4400
-Wire Wire Line
-	9400 4500 10000 4500
-Wire Wire Line
-	9400 4600 10000 4600
-Wire Wire Line
-	9400 4700 10000 4700
-Wire Wire Line
-	9400 4800 10000 4800
+	9400 5000 10000 5000
 Wire Wire Line
 	9400 4900 10000 4900
 Wire Wire Line
-	9400 5000 10000 5000
-Text Label 10000 5000 2    50   ~ 0
-LED_OUT1
-Text Label 10000 4900 2    50   ~ 0
-LED_OUT2
-Text Label 10000 4800 2    50   ~ 0
-LED_OUT3
-Text Label 10000 4700 2    50   ~ 0
-LED_OUT4
-Text Label 10000 4600 2    50   ~ 0
-LED_OUT5
-Text Label 10000 4500 2    50   ~ 0
-LED_OUT6
-Text Label 10000 4400 2    50   ~ 0
-LED_OUT7
+	9400 4800 10000 4800
+Wire Wire Line
+	9400 4700 10000 4700
+Wire Wire Line
+	9400 4600 10000 4600
+Wire Wire Line
+	9400 4500 10000 4500
+Wire Wire Line
+	9400 4400 10000 4400
+Wire Wire Line
+	9400 4300 10000 4300
 Text Label 10000 4300 2    50   ~ 0
+LED_OUT1
+Text Label 10000 4400 2    50   ~ 0
+LED_OUT2
+Text Label 10000 4500 2    50   ~ 0
+LED_OUT3
+Text Label 10000 4600 2    50   ~ 0
+LED_OUT4
+Text Label 10000 4700 2    50   ~ 0
+LED_OUT5
+Text Label 10000 4800 2    50   ~ 0
+LED_OUT6
+Text Label 10000 4900 2    50   ~ 0
+LED_OUT7
+Text Label 10000 5000 2    50   ~ 0
 LED_OUT8
 Text Notes 4100 6600 0    100  ~ 20
 BUTTONS
@@ -11991,9 +11974,7 @@ Text Label 6700 1700 2    50   ~ 0
 INDA
 Wire Wire Line
 	6700 1700 6500 1700
-NoConn ~ 4300 2500
 NoConn ~ 4300 2600
-NoConn ~ 4300 2700
 NoConn ~ 6500 2700
 $Comp
 L power:PWR_FLAG #FLG0101
@@ -12111,4 +12092,28 @@ F 3 "~" H 9500 2600 50  0001 C CNN
 	1    9500 2600
 	1    0    0    -1  
 $EndComp
+$Comp
+L 74xx:74HC245 U1
+U 1 1 5D324E2B
+P 8600 4800
+F 0 "U1" H 9000 4100 50  0000 C CNN
+F 1 "74HCT245" H 9000 4000 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 8600 4800 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74ahct245.pdf?ts=1608888725015" H 8600 4800 50  0001 C CNN
+	1    8600 4800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 5200 9200 5200
+Wire Wire Line
+	9200 5200 9200 5300
+Connection ~ 9200 5300
+Text Label 4000 2500 0    50   ~ 0
+BTNA
+Text Label 4000 2700 0    50   ~ 0
+BTNB
+Wire Wire Line
+	4000 2500 4300 2500
+Wire Wire Line
+	4000 2700 4300 2700
 $EndSCHEMATC
