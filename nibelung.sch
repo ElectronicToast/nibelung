@@ -6672,18 +6672,7 @@ A3 AC 3E 82 20 08 82 20 08 82 20 08 42 EF 11 B9 28 08 82 20 08 82 20 08 82 20 94
 EndData
 $EndBitmap
 $Comp
-L Mechanical:MountingHole_Pad H1
-U 1 1 5FF13188
-P 8800 1200
-F 0 "H1" H 8900 1246 50  0000 L CNN
-F 1 "M2" H 8900 1155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 8800 1200 50  0001 C CNN
-F 3 "~" H 8800 1200 50  0001 C CNN
-	1    8800 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H2
+L Mechanical:MountingHole H2
 U 1 1 5FF13498
 P 9200 1200
 F 0 "H2" H 9300 1246 50  0000 L CNN
@@ -6694,7 +6683,7 @@ F 3 "~" H 9200 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H3
+L Mechanical:MountingHole H3
 U 1 1 5FF13873
 P 9600 1200
 F 0 "H3" H 9700 1246 50  0000 L CNN
@@ -6705,7 +6694,7 @@ F 3 "~" H 9600 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H4
+L Mechanical:MountingHole H4
 U 1 1 5FF13ABB
 P 10000 1200
 F 0 "H4" H 10100 1246 50  0000 L CNN
@@ -6732,7 +6721,7 @@ U 1 1 5FF1AAF7
 P 1600 2500
 F 0 "J2" H 1582 2825 50  0000 C CNN
 F 1 "AudioJack3-TSW" H 1582 2734 50  0000 C CNN
-F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ-3524-SMT_Horizontal" H 1600 2500 50  0001 C CNN
+F 2 "nibelung:Jack_CUI_SJ-3524" H 1600 2500 50  0001 C CNN
 F 3 "https://www.cuidevices.com/product/resource/sj-352x-smt.pdf" H 1600 2500 50  0001 C CNN
 	1    1600 2500
 	1    0    0    -1  
@@ -11315,28 +11304,6 @@ Wire Wire Line
 	7000 1900 6500 1900
 Wire Wire Line
 	7000 1800 6500 1800
-$Comp
-L power:GND #PWR037
-U 1 1 600ED2E2
-P 9400 1300
-F 0 "#PWR037" H 9400 1050 50  0001 C CNN
-F 1 "GND" H 9405 1127 50  0000 C CNN
-F 2 "" H 9400 1300 50  0001 C CNN
-F 3 "" H 9400 1300 50  0001 C CNN
-	1    9400 1300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8800 1300 9200 1300
-Connection ~ 9200 1300
-Wire Wire Line
-	9200 1300 9400 1300
-Connection ~ 9400 1300
-Wire Wire Line
-	9400 1300 9600 1300
-Connection ~ 9600 1300
-Wire Wire Line
-	9600 1300 10000 1300
 Text Notes 8900 1900 0    100  ~ 20
 INDICATORS
 $Comp
@@ -11344,7 +11311,7 @@ L Device:R_Small_US R9
 U 1 1 5FF31FC6
 P 8500 2600
 F 0 "R9" H 8600 2650 50  0000 L CNN
-F 1 "10k" H 8600 2550 50  0000 L CNN
+F 1 "1k" H 8600 2550 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 8500 2600 50  0001 C CNN
 F 3 "~" H 8500 2600 50  0001 C CNN
 	1    8500 2600
@@ -11384,17 +11351,6 @@ F 3 "~" V 8500 2400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small_US R12
-U 1 1 5FF4CED7
-P 9900 2600
-F 0 "R12" H 10000 2650 50  0000 L CNN
-F 1 "680" H 10000 2550 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9900 2600 50  0001 C CNN
-F 3 "~" H 9900 2600 50  0001 C CNN
-	1    9900 2600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR036
 U 1 1 5FF4D4B5
 P 9900 2700
@@ -11417,17 +11373,6 @@ F 3 "~" V 9900 2400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small_US R11
-U 1 1 5FF561B5
-P 9500 2600
-F 0 "R11" H 9600 2650 50  0000 L CNN
-F 1 "430" H 9600 2550 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9500 2600 50  0001 C CNN
-F 3 "~" H 9500 2600 50  0001 C CNN
-	1    9500 2600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR038
 U 1 1 5FF567D9
 P 9100 2700
@@ -11448,17 +11393,6 @@ F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9500 2400 50  0001
 F 3 "~" V 9500 2400 50  0001 C CNN
 	1    9500 2400
 	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small_US R10
-U 1 1 5FF5F686
-P 9100 2600
-F 0 "R10" H 9200 2650 50  0000 L CNN
-F 1 "330" H 9200 2550 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9100 2600 50  0001 C CNN
-F 3 "~" H 9100 2600 50  0001 C CNN
-	1    9100 2600
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR039
@@ -12053,10 +11987,10 @@ Text Label 4100 1600 0    50   ~ 0
 INDB
 Wire Wire Line
 	4100 1600 4300 1600
-Text Label 6700 2100 2    50   ~ 0
+Text Label 6700 1700 2    50   ~ 0
 INDA
 Wire Wire Line
-	6700 2100 6500 2100
+	6700 1700 6500 1700
 NoConn ~ 4300 2500
 NoConn ~ 4300 2600
 NoConn ~ 4300 2700
@@ -12109,7 +12043,6 @@ F 3 "" H 3400 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3400 3200 3800 3200
-NoConn ~ 6500 1700
 Text Label 7000 1800 2    50   ~ 0
 DASH_TXEN
 Text Label 7000 2000 2    50   ~ 0
@@ -12118,12 +12051,10 @@ Text Label 7000 1900 2    50   ~ 0
 DASH_RX
 Text Notes 1300 5800 0    50   ~ 0
 RS-485 Transceiver
-Text Notes 7000 1700 2    50   ~ 0
-FOR MIC IN
-Text Label 7200 2200 2    50   ~ 0
+Text Label 7200 2100 2    50   ~ 0
 AUD_DET
 Wire Wire Line
-	7200 2200 6500 2200
+	7200 2100 6500 2100
 Text Label 7000 2300 2    50   ~ 0
 UART_TX
 Text Label 7000 2400 2    50   ~ 0
@@ -12132,4 +12063,52 @@ Wire Wire Line
 	7000 2300 6500 2300
 Wire Wire Line
 	6500 2400 7000 2400
+Text Label 7200 2200 2    50   ~ 0
+MIC_IN
+Wire Wire Line
+	7200 2200 6500 2200
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5FF13188
+P 8800 1200
+F 0 "H1" H 8900 1246 50  0000 L CNN
+F 1 "M2" H 8900 1155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 8800 1200 50  0001 C CNN
+F 3 "~" H 8800 1200 50  0001 C CNN
+	1    8800 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R10
+U 1 1 5FF5F686
+P 9100 2600
+F 0 "R10" H 9200 2650 50  0000 L CNN
+F 1 "330" H 9200 2550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9100 2600 50  0001 C CNN
+F 3 "~" H 9100 2600 50  0001 C CNN
+	1    9100 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R12
+U 1 1 5FF4CED7
+P 9900 2600
+F 0 "R12" H 10000 2650 50  0000 L CNN
+F 1 "100" H 10000 2550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9900 2600 50  0001 C CNN
+F 3 "~" H 9900 2600 50  0001 C CNN
+	1    9900 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R11
+U 1 1 5FF561B5
+P 9500 2600
+F 0 "R11" H 9600 2650 50  0000 L CNN
+F 1 "470" H 9600 2550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9500 2600 50  0001 C CNN
+F 3 "~" H 9500 2600 50  0001 C CNN
+	1    9500 2600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
