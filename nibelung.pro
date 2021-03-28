@@ -1,4 +1,4 @@
-update=1/18/2021 1:00:50 AM
+update=3/27/2021 8:32:37 PM
 version=1
 last_client=kicad
 [general]
@@ -21,7 +21,7 @@ BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
-ProhibitOverlappingCourtyards=1
+ProhibitOverlappingCourtyards=0
 MinTrackWidth=0.1524
 MinViaDiameter=0.508
 MinViaDrill=0.254
@@ -246,7 +246,7 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.2032
+Clearance=0.1524
 TrackWidth=0.254
 ViaDiameter=0.762
 ViaDrill=0.381
@@ -256,6 +256,28 @@ dPairWidth=0.254
 dPairGap=0.254
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
+Name=Audio
+Clearance=0.254
+TrackWidth=0.381
+ViaDiameter=0.762
+ViaDrill=0.381
+uViaDiameter=0.762
+uViaDrill=0.381
+dPairWidth=0.254
+dPairGap=0.254
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
+Name=LED_Out
+Clearance=0.2032
+TrackWidth=0.254
+ViaDiameter=0.6096
+ViaDrill=0.3048
+uViaDiameter=0.762
+uViaDrill=0.381
+dPairWidth=0.254
+dPairGap=0.254
+dPairViaGap=0.25
+[pcbnew/Netclasses/3]
 Name=Minimum
 Clearance=0.1524
 TrackWidth=0.1524
@@ -266,7 +288,7 @@ uViaDrill=0.254
 dPairWidth=0.1524
 dPairGap=0.1524
 dPairViaGap=0.25
-[pcbnew/Netclasses/2]
+[pcbnew/Netclasses/4]
 Name=RS-485
 Clearance=0.1524
 TrackWidth=0.2032
@@ -277,7 +299,7 @@ uViaDrill=0.3048
 dPairWidth=0.2032
 dPairGap=0.1524
 dPairViaGap=0.25
-[pcbnew/Netclasses/3]
+[pcbnew/Netclasses/5]
 Name=Thin
 Clearance=0.2032
 TrackWidth=0.2032
@@ -288,3 +310,13 @@ uViaDrill=0.3048
 dPairWidth=0.2032
 dPairGap=0.2032
 dPairViaGap=0.25
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=doc/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
